@@ -7,7 +7,7 @@ import Most from './components/hero/Most';
 import GenAI from './components/hero/GenAI';
 import Professional from './components/hero/Professional';
 import Learning from './components/hero/Learning';
-import Degree from './components/hero/Degree';
+import Degree from './components/hero/Degree/Degree';
 import Programs from './components/hero/Programs';
 import ExploreCourses from './components/hero/ExploreCourses';
 import LearnerOutcomes from './components/hero/LearnerOutcomes';
@@ -19,6 +19,7 @@ import Signup from './components/hero/login/Signup';
 import CareerLaunchSection from './components/launch/CareerLaunchSection';
 import Onlinedegree from './components/navbar/Onlinedegree';
 import { ProjectManager } from './components/launch/ProjectManager';
+import EnrollmentSection from './components/hero/Degree/EnrollmentSection';
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/careerlaunchsection" element={<CareerLaunchSection />}/>
         <Route path="/onlinedegree" element={<Onlinedegree/>}/>
         <Route path="/projectmanager" element={<ProjectManager/>}/>
+        <Route path="/enrollmentsection" element={<EnrollmentSection/>}/>
       </Routes>
       <Footer />
     </Router>

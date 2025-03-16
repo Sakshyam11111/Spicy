@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -10,10 +11,10 @@ const Footer = () => {
                     <div>
                         <h3 className="font-bold mb-4">Quick Links</h3>
                         <ul>
-                            <li><a href="/about" className="hover:underline">About Us</a></li>
-                            <li><a href="/courses" className="hover:underline">Courses</a></li>
-                            <li><a href="/contact" className="hover:underline">Contact</a></li>
-                            <li><a href="/help" className="hover:underline">Help Center</a></li>
+                            <li><Link to="/about" className="hover:underline">About Us</Link></li>
+                            <li><Link to="/courses" className="hover:underline">Courses</Link></li>
+                            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+                            <li><Link to="/help" className="hover:underline">Help Center</Link></li>
                         </ul>
                     </div>
 
@@ -45,15 +46,15 @@ const Footer = () => {
 
                     {/* Newsletter Section */}
                     <div>
-                        <h3 className="font-bold mb-4">Log In to our Spicy</h3>
+                        <h3 className="font-bold mb-4">Log In to Spicy</h3>
                         <input
                             type="email"
                             placeholder="Your email"
                             className="p-2 rounded-md text-gray-800"
                         />
-                        <button className="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-500">
+                        <Link to="/login" className="bg-purple-600 text-white px-4 py-2 rounded-md mt-2 block text-center hover:bg-purple-500">
                             Log In
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

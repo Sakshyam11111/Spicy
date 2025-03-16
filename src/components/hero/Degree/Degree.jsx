@@ -1,8 +1,9 @@
 import React from 'react';
-import Image1 from '../../assets/masterengering.jpg';
-import Image2 from '../../assets/masterscience.jpg';
-import Image3 from '../../assets/masterbusiness.jpg';
-import Image4 from '../../assets/masterdata.jpg';
+import { Link } from 'react-router-dom'; // Import Link
+import Image1 from '../../../assets/masterengering.jpg';
+import Image2 from '../../../assets/masterscience.jpg';
+import Image3 from '../../../assets/masterbusiness.jpg';
+import Image4 from '../../../assets/masterdata.jpg';
 import { IoIosArrowForward } from "react-icons/io";
 
 const Degree = () => {
@@ -12,7 +13,7 @@ const Degree = () => {
             provider: 'University of Colorado Boulder',
             title: 'Master of Engineering',
             description: 'Project',
-            link: '/data-analytics',
+            link: '/enrollmentsection',
         },
         {
             imgSrc: Image2,
@@ -23,7 +24,7 @@ const Degree = () => {
         },
         {
             imgSrc: Image3,
-            provider: 'University of IIIinois Urbana-Champaign',
+            provider: 'University of Illinois Urbana-Champaign',
             title: 'Master of Business Administration',
             description: 'Course',
             link: '/ux-design',
@@ -46,12 +47,17 @@ const Degree = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {certificates.map((cert, index) => (
-                    <div key={index} className="rounded-lg p-4 bg-white shadow-md transition-transform transform hover:scale-105">
-                        <img src={cert.imgSrc} alt={cert.title} className="w-full h-40 object-cover rounded-md mb-4" />
+                    <Link key={index} to={cert.link} className="rounded-lg p-4 bg-white shadow-md transition-transform transform hover:scale-105">
+                        <img 
+                            src={cert.imgSrc} 
+                            alt={`Image for ${cert.title}`} 
+                            className="w-full h-40 object-cover rounded-md mb-4" 
+                            onError={(e) => { e.target.onerror = null; e.target.src="fallback-image.jpg"; }} // Add a fallback image
+                        />
                         <p className="text-gray-500">{cert.provider}</p>
-                        <h3 className=" font-semibold">{cert.title}</h3>
+                        <h3 className="font-semibold">{cert.title}</h3>
                         <p className="text-gray-500 mt-8">{cert.description}</p>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <div className="flex space-x-4 mt-4">
