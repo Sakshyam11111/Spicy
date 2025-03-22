@@ -20,6 +20,7 @@ import CareerLaunchSection from './components/launch/CareerLaunchSection';
 import Onlinedegree from './components/navbar/Onlinedegree';
 import { ProjectManager } from './components/launch/ProjectManager';
 import EnrollmentSection from './components/hero/Degree/EnrollmentSection';
+import Careers from './components/navbar/Careers';
 
 const App = () => {
   return (
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/onlinedegree" element={<Onlinedegree/>}/>
         <Route path="/projectmanager" element={<ProjectManager/>}/>
         <Route path="/enrollmentsection" element={<EnrollmentSection/>}/>
+        <Route path="/careers" element={<Careers/>}/>
       </Routes>
       <Footer />
     </Router>
