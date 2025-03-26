@@ -21,6 +21,7 @@ import Onlinedegree from './components/navbar/Onlinedegree';
 import { ProjectManager } from './components/launch/ProjectManager';
 import EnrollmentSection from './components/hero/Degree/EnrollmentSection';
 import Careers from './components/navbar/Careers';
+import GoogleProject from './components/launch/GoogleProject';
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/projectmanager" element={<ProjectManager/>}/>
         <Route path="/enrollmentsection" element={<EnrollmentSection/>}/>
         <Route path="/careers" element={<Careers/>}/>
+        <Route path="/googleproject" element={<GoogleProject/>}/>
       </Routes>
       <Footer />
     </Router>

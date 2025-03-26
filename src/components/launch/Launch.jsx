@@ -88,8 +88,8 @@ const Launch = () => {
                         <p className="text-gray-500 mt-4">Oversee the planning and execution of projects to ensure they’re successful</p>
                         <h2 className="text-xl font-bold mt-10">Median Salary</h2>
                         <div className="flex flex-col space-y-4 mt-6">
-                            <Link to="/all" className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</Link>
-                            <Link to="/project" className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Project Manager</Link>
+                            <button className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</button>
+                            <button className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Project Manager</button>
                         </div>
                         <hr className="my-6 border-t w-96 border-gray-300" />
                         <p className="text-gray-500">Job openings: ***</p>
@@ -105,13 +105,13 @@ const Launch = () => {
                                 <p className="mt-2">4.7 ⭐ <span className="text-gray-500">(315 reviews)</span></p>
                                 <p className="text-gray-500 mt-1">Beginner: Professional Certificate - 4 months</p>
                             </Link>
-                            <div className="rounded-lg p-4 bg-white w-1/2 transition-transform transform hover:scale-105 hover:shadow-lg">
+                            <Link to="googleproject" className="rounded-lg p-4 bg-white w-1/2 transition-transform transform hover:scale-105 hover:shadow-lg">
                                 <img src={Image2} alt="Google Project Management" className="w-full h-40 object-cover rounded-md" />
                                 <h3 className="font-semibold mt-2">Google Project Management</h3>
                                 <p className="text-gray-500 mt-2">Skills you'll gain: Project Management, Change Management, Strategic Thinking, Career...</p>
                                 <p className="mt-2">4.8 ⭐ <span className="text-gray-500">(114K reviews)</span></p>
                                 <p className="text-gray-500 mt-1">Beginner: Professional Certificate - 6 months</p>
-                            </div>
+                            </Link>
                         </div>
                         <p className="mt-6 flex justify-end">
                             <Link to="/certificates" className="text-black hover:underline flex items-center">
@@ -130,8 +130,8 @@ const Launch = () => {
                         <p className="text-gray-500 mt-4">Collect, organize, and transform data to make informed decisions</p>
                         <h2 className="text-xl font-bold mt-10">Median Salary</h2>
                         <div className="flex flex-col space-y-4 mt-6">
-                            <Link to="/all" className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</Link>
-                            <Link to="/data-analyst" className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Data Analyst</Link>
+                            <button className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</button>
+                            <button className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Data Analyst</button>
                         </div>
                         <hr className="my-6 border-t w-96 border-gray-300" />
                         <p className="text-gray-500">Job openings: ***</p>
@@ -172,8 +172,8 @@ const Launch = () => {
                         <p className="text-gray-500 mt-4">Define and develop digital strategies to deliver business growth through online channels</p>
                         <h2 className="text-xl font-bold mt-10">Median Salary</h2>
                         <div className="flex flex-col space-y-4 mt-6">
-                            <Link to="/all" className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</Link>
-                            <Link to="/digital-marketer" className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Digital Marketer</Link>
+                            <button className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</button>
+                            <button className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Digital Marketer</button>
                         </div>
                         <hr className="my-6 border-t w-96 border-gray-300" />
                         <p className="text-gray-500">Job openings: ***</p>
@@ -214,8 +214,8 @@ const Launch = () => {
                         <p className="text-gray-500 mt-4">Make digital and physical products easier and more enjoyable to use</p>
                         <h2 className="text-xl font-bold mt-10">Median Salary</h2>
                         <div className="flex flex-col space-y-4 mt-6">
-                            <Link to="/all" className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</Link>
-                            <Link to="/ux-designer" className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">UX Designer</Link>
+                            <button className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</button>
+                            <button className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">UX Designer</button>
                         </div>
                         <hr className="my-6 border-t w-96 border-gray-300" />
                         <p className="text-gray-500">Job openings: ***</p>
@@ -256,8 +256,8 @@ const Launch = () => {
                         <p className="text-gray-500 mt-4">Design and develop the look, feel, function, and user experience of a website</p>
                         <h2 className="text-xl font-bold mt-10">Median Salary</h2>
                         <div className="flex flex-col space-y-4 mt-6">
-                            <link to="/all" className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</link>
-                            <link to="/ux-designer" className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Front-End Developer</link>
+                            <button className="bg-gray-300 w-52 text-gray-500 px-7 py-1 rounded-md transition">All occupations</button>
+                            <button className="bg-purple-600 w-80 text-white px-7 py-1 rounded-md transition">Front-End Developer</button>
                         </div>
                         <hr className="my-6 border-t w-96 border-gray-300" />
                         <p className="text-gray-500">Job openings: ***</p>
@@ -282,10 +282,12 @@ const Launch = () => {
                             </div>
                         </div>
                         <p className="mt-6 flex justify-end">
-                            <link to="/certificates" className="text-black hover:underline flex items-center">
+
+                            <Link to="/certificates" className="text-black hover:underline flex items-center">
                                 Explore all certificates <FaArrowRight className="ml-1" />
-                            </link>
+                            </Link>
                         </p>
+
                     </div>
                 </section>
             )}
