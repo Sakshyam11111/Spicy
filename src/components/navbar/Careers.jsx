@@ -89,6 +89,26 @@ const Careers = () => {
       description: "Anytime you interact with a product or service, you have a user experience. This might entail navigating a mobile app, browsing a website, interacting with a physical product (like trying out a new running shoe), or taking advantage of a service (checking into a hotel or using public transportation, for example).",
       date: "September 14, 2014",
     },
+    {
+      title: "What Is Digital Marketing? Types, Skills, and Careers",
+      description: "Digital marketing, or online marketing, is a form of advertising that uses the internet and digital technologies to connect with customers.",
+      date: "September 16, 2024",
+    },
+    {
+      title: "What Is a Data Scientist? Salary, Skills, and How to Become One",
+      description: "Working as a data scientist can be intellectually challenging, analytically satisfying, and put you at the forefront of new technological advances. Data scientists have become more common and in demand, as big data continues to be increasingly important to the way organizations make decisions.",
+      date: "March 15, 2024",
+    },
+    {
+      title: "What Is Cybersecurity? Definition + Industry Guide",
+      description: "Cybersecurity is the branch of technology that aims to protect computers, mobile devices, and information from malicious actors who want to gain unauthorized access to them or cause harm.",
+      date: "July 9, 2024",
+    },
+    {
+      title: "What Does a Software Developer Do? Career Overview + Outlook",
+      description: "Software systems are an integral part of nearly every modern industry. As a result, you can pursue a software development career in almost any field that aligns with your interests or passions.",
+      date: "March 22, 2024",
+    },
   ];
 
   return (
@@ -131,21 +151,21 @@ const Careers = () => {
       <div className="mt-10 mb-10">
         <h2 className="text-3xl font-bold mb-4">Career Resources</h2>
         <div className="flex flex-wrap md:w-2/3 space-x-0 md:space-x-4 mb-6">
-          <button className="bg-gray-500 rounded-3xl px-4 py-2 hover:bg-gray-600 text-white font-bold">General</button>
-          <button className="border rounded-3xl px-2 hover:bg-gray-300 font-bold">Skills</button>
-          <button className="border rounded-3xl px-2 hover:bg-gray-300 font-bold">Career advice</button>
-          <button className="border rounded-3xl px-2 hover:bg-gray-300 font-bold">Career path planning</button>
+          <button className="bg-gray-500 rounded-3xl px-4 py-2 hover:bg-gray-600 text-white font-bold transition duration-200">General</button>
+          <button className="border rounded-3xl px-2 hover:bg-gray-300 font-bold transition duration-200">Skills</button>
+          <button className="border rounded-3xl px-2 hover:bg-gray-300 font-bold transition duration-200">Career advice</button>
+          <button className="border rounded-3xl px-2 hover:bg-gray-300 font-bold transition duration-200">Career path planning</button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {resources.map((resource, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-4">
+            <div key={index} className="border border-gray-200 rounded-lg p-4 shadow-md transition-transform transform hover:scale-105 hover:shadow-lg duration-200">
               <h3 className="text-lg font-semibold">{resource.title}</h3>
               <p className="text-sm text-gray-500 mt-4">{resource.description}</p>
               <p className="text-sm text-gray-500 mt-10">{resource.date}</p>
             </div>
           ))}
         </div>
-        <button className="border border-purple-500 text-purple-500 rounded-2xl px-3 py-3  hover:bg-purple-600 hover:text-white font-bold mt-6">Show more</button>
+        <button className="border border-purple-500 text-purple-500 rounded-2xl px-3 py-3 hover:bg-purple-600 hover:text-white font-bold mt-6 transition duration-200">Show more</button>
       </div>
     </div>
   );
